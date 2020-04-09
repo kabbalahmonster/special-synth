@@ -26,7 +26,7 @@ export class GrooveBoxComponent implements OnInit {
     this.tone = new Tone();
     this.filter = new Tone.Filter(this.filterFrequency).toMaster();
     this.polySynth = new Tone.PolySynth().connect(this.filter);    
-    this.pattern = new Tone.Pattern(note =>{
+    this.pattern = new Tone.Pattern((time,note) =>{
       this.polySynth.triggerAttackRelease(note,'4n')},this.patternNotes,"random");
     this.patternPlaying = false;
 
