@@ -20,13 +20,14 @@ export class GrooveBoxComponent implements OnInit {
 
   ngOnInit() {
     // initialize variables
-    this.patternNotes = ['c3','e3','g3','c4'];
+    this.patternNotes = ['c5','e5','g5','c6'];
     this.filterFrequency=400;
     this.firstTone=true;
     this.tone = new Tone();
     this.filter = new Tone.Filter(this.filterFrequency).toMaster();
     this.polySynth = new Tone.PolySynth().connect(this.filter);    
-    this.pattern = new Tone.Pattern((note)=>{this.playPolyNote(note)},this.patternNotes,"random");
+    this.pattern = new Tone.Pattern(note =>{
+      this.polySynth.triggerAttackRelease(note,'4n')},this.patternNotes,"random");
     this.patternPlaying = false;
 
   }
