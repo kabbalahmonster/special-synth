@@ -8,7 +8,6 @@ import * as Tone from 'tone';
 })
 export class GrooveboxComponent implements OnInit {
   constructor() {}
-
   // --- declare variables
   polySynth: any;
   tone: any;
@@ -50,7 +49,7 @@ export class GrooveboxComponent implements OnInit {
       pitchDecay: 0.1,
       octaves: 3,
       oscillator: {
-        type: 'si',
+        type: 'sine',
       },
       envelope: {
         attack: 0.001,
