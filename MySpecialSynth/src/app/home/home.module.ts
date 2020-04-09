@@ -1,4 +1,4 @@
-import { GrooveBoxComponent } from './../groove-box/groove-box.component';
+import { GrooveboxComponent } from './../groovebox/groovebox.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
@@ -15,10 +15,10 @@ import { HomePage } from './home.page';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage,
+        component: HomePage
       }
     ])
   ],
-  declarations: [HomePage,GrooveBoxComponent]
+  declarations: [HomePage, GrooveboxComponent]
 })
 export class HomePageModule {}

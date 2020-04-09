@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { GrooveBoxComponent } from './groove-box.component';
+import { GrooveboxComponent } from './groovebox.component';
 
-describe('GrooveBoxComponent', () => {
-  let component: GrooveBoxComponent;
-  let fixture: ComponentFixture<GrooveBoxComponent>;
+describe('GrooveboxComponent', () => {
+  let component: GrooveboxComponent;
+  let fixture: ComponentFixture<GrooveboxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GrooveBoxComponent ],
+      declarations: [ GrooveboxComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GrooveBoxComponent);
+    fixture = TestBed.createComponent(GrooveboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
